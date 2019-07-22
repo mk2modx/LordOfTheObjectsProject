@@ -1,10 +1,8 @@
 package com.skilldistillery.lordoftheobjects;
 
 
-
-
 public class Player extends Creature {
-	String playerName = "";
+	String playerName =("");
 	int potions = 0;
 	
 	public Player() {
@@ -14,7 +12,7 @@ public class Player extends Creature {
 	public Player(int strength, int MaxHP) {
 		this.setPlayerName(playerName);
 		this.setStrength(5);
-		this.setMaxHP(75);
+		this.setMaxHP(50);
 			
 	}
 	public String getPlayerName() {
@@ -34,10 +32,8 @@ public class Player extends Creature {
 	}
 
 	public String getInfo() {
-//		System.out.println(maxHP);
-		return  playerName+" has : current HP " + maxHP+ "/ max HP "+maxHP;
+		return  playerName+ " has " +maxHP+ " / "+maxHP+"HP";
 	}
 	
 }
-
 
